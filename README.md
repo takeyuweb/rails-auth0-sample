@@ -1,6 +1,6 @@
-# README
+# rails-auth0-sample
 
-```bash
-$ docker-compose up -d
-$ bundle exec bin/setup
-```
+https://rails-auth0-sample.herokuapp.com/
+
+- Use Omniauth
+
