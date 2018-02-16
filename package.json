@@ -1,5 +1,11 @@
 {
   "name": "rails-auth0-sample",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^3.2.2",
+    "auth0-lock": "^11.2.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
 }
