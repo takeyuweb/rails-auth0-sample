@@ -1,0 +1,9 @@
+<h1>Auth0js#show</h1>
+<p>Find me in app/views/auth0js/show.html.erb</p>
+
+<div id="js-auth0-lock"
+     data-auth0-client-id="<%= Rails.application.secrets.auth0_client_id %>"
+     data-auth0-domain="<%= Rails.application.secrets.auth0_domain %>">
+  <button id="js-login-button">Login with Lock for Web</button>
+  <p>Welcome <span id="js-nickname-area">Guest</span></p>
+</div>
