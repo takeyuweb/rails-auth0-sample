@@ -8,11 +8,7 @@ class Api::DeviseUsers::GetUserController < ApplicationController
     if user&.active_for_authentication?
 
       # 認証を通ったらこのデータベースが持っているユーザー情報を返す
-      data = {
-        user_id: user.id,
-        email: user.email
-      }
-      render json: data
+      render json: user.auth0_data
     else
       render status: :not_found, json: {}
     end
