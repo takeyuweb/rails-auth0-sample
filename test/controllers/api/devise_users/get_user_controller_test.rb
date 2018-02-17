@@ -1,10 +1,10 @@
 require 'test_helper'
 
 class Api::DeviseUsers::GetUserControllerTest < ActionDispatch::IntegrationTest
-  fixtures :users
+  fixtures :devise_users
 
   test 'should get show' do
-    user = users(:one)
+    user = devise_users(:one)
 
     get api_devise_users_get_user_path, params: { email: user.email }
     assert_response :success

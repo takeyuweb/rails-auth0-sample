@@ -6,8 +6,8 @@
 #
 one:
   email: one@test.host
-  encrypted_password: <%= User.new.send(:password_digest, 'one') %>
+  encrypted_password: <%= DeviseUser.new.send(:password_digest, 'one') %>
 
 two:
   email: two@test.host
-  encrypted_password: <%= User.new.send(:password_digest, 'two') %>
+  encrypted_password: <%= DeviseUser.new.send(:password_digest, 'two') %>

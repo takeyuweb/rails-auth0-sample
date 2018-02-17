@@ -4,7 +4,7 @@ class Api::DeviseUsers::GetUserController < ApplicationController
   # TODO: IPアドレス制限。Auth0のカスタムデータベースアクセスのソースIPアドレスを確認してそこのみ許可する
 
   def show
-    user = User.find_by(email: params[:email])
+    user = DeviseUser.find_by(email: params[:email])
     if user&.active_for_authentication?
 
       # 認証を通ったらこのデータベースが持っているユーザー情報を返す
