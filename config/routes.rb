@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  namespace :api do
+    namespace :devise_users do
+      get 'login' => 'login#show', module: :devise_users
+      get 'get_user' => 'get_user#show', module: :devise_users
+    end
+  end
+
+  get '/devise_sample' =>  'devise_sample#show'
+
+  devise_for :devise_users
   get 'dashboard' => 'dashboard#show'
   get '/auth/oauth2/callback' => 'auth0#callback'
   get '/auth/failure' => 'auth0#failure'

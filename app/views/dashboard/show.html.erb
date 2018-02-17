@@ -1,4 +1,8 @@
 <h1>Dashboard#show</h1>
 <p>Find me in app/views/dashboard/show.html.erb</p>
 
-<%= session[:userinfo].inspect %>
+userinfo: <%= session[:userinfo].inspect %>
+
+<hr>
+
+DeviseUser: <%= @devise_user.inspect %>

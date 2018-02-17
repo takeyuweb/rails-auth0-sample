@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+DeviseUser.create!([{ email:                 'user01@test.host',
+                      password:              'password',
+                      password_confirmation: 'password' },
+                    { email:                 'user02@test.host',
+                      password:              'password',
+                      password_confirmation: 'password' }])
