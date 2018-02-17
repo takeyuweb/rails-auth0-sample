@@ -51,3 +51,7 @@ gem 'omniauth', '~> 1.6.1'
 gem 'omniauth-auth0', '~> 2.0.0'
 # Webpack
 gem 'webpacker'
+
+# Devise
+# Devise から Auth0 への移行を試す
+gem 'devise'
