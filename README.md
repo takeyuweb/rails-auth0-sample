@@ -24,6 +24,13 @@ https://github.com/takeyuweb/rails-auth0-sample/pull/6
 Auth0ログインのフォールバック先として、既存のサービスのデータベース/APIを利用したパスワード認証が可能。
 この機能を利用することで、運用中のサービスをゆるやかにAuth0認証に移行することが可能。
 
+## omniauth-facebook から Auth0 への移行サンプル
+
+https://github.com/takeyuweb/rails-auth0-sample/pull/10
+
+omniauth-facebook でログインした場合、FacebookのユーザーIDが得られ、それをみてユーザーを識別します。
+Auth0でFacebookログインを使った場合、Auth0から得られるuidは "facebook|FacebookのユーザーID" となっているため、これを使って移行前のユーザー情報を特定できます。
+
 ## Custom Social Extensions - 標準で対応していないソーシャルログインへの対応
 
 https://github.com/takeyuweb/rails-auth0-sample/issues/5
