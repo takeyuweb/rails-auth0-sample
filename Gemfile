@@ -55,3 +55,4 @@ gem 'webpacker'
 # Devise
 # Devise から Auth0 への移行を試す
 gem 'devise'
+gem 'omniauth-facebook'
